@@ -1,0 +1,13 @@
+.Poster {
+    height: 355px;
+    max-width: 100%;
+    border: 0.002px white solid;
+    transform: 0.3s;
+    border-radius: 5px;
+  }
+  @media screen and (max-width: 770px) {
+    .Poster {
+      height: 250px;
+  }
+  
+  }

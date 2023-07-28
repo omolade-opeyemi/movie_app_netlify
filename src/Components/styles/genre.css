@@ -1,0 +1,78 @@
+.container{
+    width: 100%;
+    margin: 1em auto;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .buttonGrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0px !important;
+    padding-bottom: 20px;
+    max-width: 70%;
+    margin: 10rem auto;
+    transform: 0.2s all;
+  }
+  
+.genreHeader {
+    color: #fff !important;
+    text-align: center;
+    font-family: "Montserrat";
+    margin-top: 100px;
+  }
+  .genreTagON {
+    padding: 10px 20px;
+    color: black !important;
+    background-color: rgb(103, 196, 196);
+    border-radius: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    margin: 4px 5px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .genreTagON:hover {
+    background-color: #adb5bd !important;
+  }
+  .genreTagOFF {
+    color: #ffffff !important;
+    padding: 10px 20px;
+    background-color: #4f23ef;
+    border-radius: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    margin: 4px 5px;
+  }
+  .genreTagOFF:hover {
+    background-color: #2a0996 !important;
+  }
+  
+  @media screen and (max-width: 770px) {
+    
+    .buttonGrid{
+        width: 90%;
+        margin: 5rem auto;
+      }
+  
+    .genreHeader {
+        font-size: 20px;
+    }
+    .genreTagOFF {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .genreTagON {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin: 3px 5px;
+    }
+  }

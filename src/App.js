@@ -1,24 +1,29 @@
+import { useEffect, useState } from 'react';
 import logo from './logo.svg';
+import Genre from './Components/genre';
+import Moviesbody from './Components/moviesbody';
+import NavbarComponent from './Components/navbar';
 import './App.css';
+import { DataProvider } from './Context/DataContext';
+
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <DataProvider>
+
+        <NavbarComponent/>
+
+        <Genre/>
+
+        <Moviesbody/>
+
+      </DataProvider>
     </div>
+
   );
 }
 
